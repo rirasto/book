@@ -933,6 +933,35 @@ Let us break this down a bit.
 
 ## Lambda Expressions
 
+In Python, we can have a small usually a single liner anonymous function called Lambda function which can have any number of arguments just like a normal function but with only one expression with no return statement. The result of this expression can be applied to a value. 
+
+Basic Syntax:
+
+	lambda arguments : expression
+
+For an example: a function in python
+	
+	def multiply(a, b):
+		return a*b
+		
+	#call the function
+	multiply(3*5) #outputs: 15
+	
+Same function can written as Lambda function. This function named as multiply is having 2 arguments and returns their multiplication.
+
+Lambda equivalent for above function would be:
+
+	multiply = Lambda a, b : a*b
+	
+	print multiply(3, 5) #outputs: 15
+	
+Here a and b are the 2 arguments and a*b is the expression whose value is returned as an output.
+
+Also we don't need to assign Lambda function to a variable.
+
+	(lambda a, b : a*b)(3*5)
+  
+  
 :o: Students can contribute this section
 
 ## Generators
